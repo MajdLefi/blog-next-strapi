@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bootcamps",
+  "info": {
+    "singularName": "bootcamp",
+    "pluralName": "bootcamps",
+    "displayName": "Bootcamp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bootcamp_id": {
+      "type": "customField",
+      "customField": "plugin::field-uuid.uuid"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "techs": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "imageUrl": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "program": {
+      "type": "json"
+    },
+    "detailsProgram": {
+      "type": "json"
+    },
+    "details": {
+      "type": "json"
+    },
+    "priceOne": {
+      "type": "string"
+    },
+    "priceTwo": {
+      "type": "string"
+    },
+    "priceThree": {
+      "type": "string"
+    },
+    "hours": {
+      "type": "string"
+    },
+    "hoursPerWeek": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "disponibility": {
+      "type": "string"
+    }
+  }
+}
