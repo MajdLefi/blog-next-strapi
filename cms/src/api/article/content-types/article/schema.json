@@ -54,6 +54,10 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "articles"
+    },
+    "slug": {
+      "type": "string",
+      "required": true
     }
   }
 }

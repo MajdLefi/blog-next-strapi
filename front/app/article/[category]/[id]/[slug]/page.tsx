@@ -9,14 +9,12 @@ async function getArticlesById(articleId: string) {
   return res.json()
 }
 
-export default async function Page({ params }: any) {
+export default async function Page({ params }: { params: { id: string, slug : string, category: string,  } }) {
   const article = await getArticlesById(params.id)
   console.log(article.data);
 
-
   return <main>
-    <div> {article.data.id}</div>
-    <div> {article.data.attributes.title}</div>
-    <div> {article.data.attributes.category}</div>
+    {params.slug}
+    <h1>heyyy : {article.data.attributes.introduction}</h1>
   </main>
 }

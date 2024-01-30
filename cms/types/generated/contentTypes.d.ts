@@ -793,6 +793,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       'manyToMany',
       'api::category.category'
     >;
+    slug: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
